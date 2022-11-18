@@ -1,0 +1,19 @@
+
+public class Student extends Person {
+
+	private int[] grades;
+
+	public Student(String name, String ID) {
+		super(name, ID);
+		grades = generateGrades();
+	}
+	
+	
+	private int[] generateGrades() {
+		int[] generatedGrades = new int[5];
+		
+		for(int i=0;i<generatedGrades.length;i++) {
+			generatedGrades[i] = (int)Math.random(()*61)+40);
+		}
+	}
+}

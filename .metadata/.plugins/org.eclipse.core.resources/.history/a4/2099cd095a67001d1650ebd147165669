@@ -1,0 +1,14 @@
+
+public class Course {
+	private int courseNumber;
+	private String courseName;
+	private int finalGrade;
+	
+	
+	
+	public Course(int courseNumber, String courseName, int finalGrade) {
+		this.courseNumber = courseNumber;
+		this.courseName = courseName;
+		this.finalGrade = finalGrade;
+	}
+}

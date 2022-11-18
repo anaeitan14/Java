@@ -1,0 +1,23 @@
+
+public class Student extends Person {
+
+	private int[] grades;
+	private int amountGrades;
+
+	public Student(String name, String ID) {
+		super(name, ID);
+		grades = new int[5];
+		amountGrades = 0;
+	}
+
+	private void addGrade(int grade) {
+		if(amountGrades < grades.length) {
+			grades[amountGrades++] = (int) ((Math.random() * 61) + 40);
+		}
+	}
+	
+	
+	public void getGrades() {
+		
+	}
+ }
