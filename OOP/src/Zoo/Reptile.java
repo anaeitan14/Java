@@ -16,7 +16,13 @@ public abstract class Reptile extends Animal {
 		return tailLength;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + " tail length:" + tailLength;
+	}
+
+	@Override
+	public double Eat() {
+		return super.Eat() / 2;
 	}
 }

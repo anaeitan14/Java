@@ -17,7 +17,13 @@ public class Cow extends Mammal {
 		return birthCount;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + " birth count: " + birthCount;
+	}
+
+	@Override
+	public double Eat() {
+		return super.Eat() / 4;
 	}
 }

@@ -17,6 +17,7 @@ public class Crocodile extends Reptile {
 		return passedDentist;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + " passed dentist: " + passedDentist;
 	}

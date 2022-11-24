@@ -27,8 +27,22 @@ public abstract class Bird extends Animal {
 		this.wingSpan = wingSpan;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + " flight height:" + flightHeight + " wing span: " + wingSpan;
+	}
+
+	@Override
+	public double Eat() {
+		return super.Eat() / 8;
+	}
+
+	public void Sing() {
+		System.out.println("Singing bird.......");
+	}
+	
+	public void Dance() {
+		System.out.println("Dancing bird........");
 	}
 
 }

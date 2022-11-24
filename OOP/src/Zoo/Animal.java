@@ -41,10 +41,11 @@ public abstract class Animal {
 		return isHunted;
 	}
 
-	public double setCalories() {
+	public double getCalories() {
 		return calories;
 	}
 
+	@Override
 	public String toString() {
 		return "name: " + name + " age:" + age + " isHunted:" + isHunted + " calories:" + calories;
 	}
