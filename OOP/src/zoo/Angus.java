@@ -17,8 +17,9 @@ public class Angus extends Cow {
 		return weight;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + " weight: " + weight;
 	}
-
+	
 }

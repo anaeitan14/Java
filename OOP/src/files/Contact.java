@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Contact {
 	public enum Group {
 		FRIENDS, FAMILY, WORK, OTHER
-	};
+	}
 
 	private String phoneNumber;
 	private String ownerName;
@@ -53,5 +53,10 @@ public class Contact {
 		s.println(ownerName);
 		s.println(group.name());
 
+	}
+
+	@Override
+	public String toString() {
+		return "Phone number: " + phoneNumber + " Owner name: " + ownerName + " Group: " + group;
 	}
 }

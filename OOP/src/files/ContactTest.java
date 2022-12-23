@@ -10,7 +10,7 @@ public class ContactTest {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner s = new Scanner(System.in);
 
-		/*System.out.println("Enter how many contacts you want to add");
+		System.out.println("Enter how many contacts you want to add");
 		int contactNumber = s.nextInt();
 		s.nextLine();
 
@@ -36,10 +36,11 @@ public class ContactTest {
 		}
 
 		pw.close();
-		*/
+
 		File newFile = new File("allContacts");
 		Scanner scanner = new Scanner(newFile);
 		int length = scanner.nextInt();
+		scanner.nextLine();
 
 		Contact[] contactsNew = new Contact[length];
 
@@ -48,10 +49,7 @@ public class ContactTest {
 		}
 
 		for (int i = 0; i < contactsNew.length; i++) {
-			System.out.println(i + 1 + " person is " + contactsNew[i].toString());
+			System.out.println("Person number " + (i + 1) + " is " + contactsNew[i].toString());
 		}
-
-		
 	}
-
 }

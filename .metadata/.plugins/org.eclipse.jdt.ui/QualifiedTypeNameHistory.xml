@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="files.Contact.Group"/>
+    <fullyQualifiedTypeName name="test"/>
 </qualifiedTypeNameHistroy>
