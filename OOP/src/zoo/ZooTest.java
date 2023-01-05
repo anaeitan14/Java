@@ -18,8 +18,7 @@ public class ZooTest {
 	public static void birdsSing(Animal[] animals) {
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] instanceof Bird) {
-				Bird bird = (Bird) animals[i];
-				bird.Sing();
+				((Bird)animals[i]).Sing();
 			}
 		}
 	}
@@ -27,8 +26,7 @@ public class ZooTest {
 	public static void snakeBirdDance(Animal[] animals) {
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] instanceof Bird) {
-				Bird bird = (Bird) animals[i];
-				bird.Dance();
+				((Bird)animals[i]).Dance();
 			} else if (animals[i] instanceof Snake) {
 				Snake snake = (Snake) animals[i];
 				snake.Dance();
